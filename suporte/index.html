@@ -15,7 +15,17 @@
     <p>O Codex Drive é um assistente de viagem por voz para organizar comandos, anotações, lembretes e ações durante deslocamentos. Esta página reúne orientações básicas e o canal oficial de contato.</p>
 
     <h2>Como usar</h2>
-    <p>Conceda acesso ao microfone e ao reconhecimento de fala quando solicitado. Inicie uma viagem, acione a escuta e fale seu comando com clareza. Revise na tela qualquer ação importante antes de confirmá-la.</p>
+    <p>Conceda acesso ao microfone e ao reconhecimento de fala quando solicitado. Inicie uma viagem e fale seu comando com clareza. Depois de cada resposta falada, o aplicativo volta automaticamente à escuta enquanto a viagem estiver ativa. Revise na tela qualquer ação importante antes de confirmá-la.</p>
+
+    <h2>Memória da Viagem</h2>
+    <p>Ao iniciar uma viagem, o Codex Drive pergunta se você deseja ativar a Memória da Viagem. A função só começa a registrar depois que você responde “sim”. Ela armazena somente o texto transcrito; o áudio original não é gravado nem armazenado pelo aplicativo.</p>
+    <p>O estado atual aparece na tela como “Memória ativa”, “Memória pausada” ou “Memória desativada”. Durante a viagem, você pode usar estes comandos de voz:</p>
+    <ul>
+      <li><strong>“Pausar memória”</strong> ou <strong>“Não registre esta parte”</strong> para interromper o registro de novas transcrições.</li>
+      <li><strong>“Retomar memória”</strong> para voltar a registrar somente o texto transcrito.</li>
+      <li><strong>“Apagar a transcrição desta viagem”</strong> para excluir o conteúdo da viagem atual.</li>
+    </ul>
+    <p>Ao finalizar, o aplicativo pergunta se você deseja organizar e resumir o conteúdo. Se você confirmar e houver um backend configurado, a transcrição poderá ser enviada para gerar o resumo conectado, inclusive pela OpenAI quando esse recurso estiver ativo. Sem confirmação, a transcrição não é enviada para esse resumo. Sem backend ou se o serviço estiver indisponível, o aplicativo produz uma organização local simples.</p>
 
     <h2>Permissões</h2>
     <ul>
@@ -26,7 +36,8 @@
     <p>As permissões podem ser consultadas ou revogadas nos Ajustes do iOS. Algumas funções deixarão de operar se a permissão correspondente for desativada.</p>
 
     <h2>Armazenamento e conexão</h2>
-    <p>As anotações e o histórico recente ficam armazenados localmente no aparelho. Quando um backend está configurado, o texto reconhecido pode ser enviado para interpretar o comando e pode ser processado por uma API de inteligência artificial. O backend não possui banco permanente de solicitações, embora o provedor de hospedagem possa manter logs técnicos conforme sua configuração.</p>
+    <p>As anotações e as transcrições consentidas da Memória da Viagem ficam armazenadas no espaço protegido do aplicativo no aparelho. Quando um backend está configurado, o comando atual reconhecido pode ser enviado para interpretação e processado por uma API de inteligência artificial. A transcrição acumulada somente é enviada para resumo após a confirmação específica do usuário ao finalizar a viagem.</p>
+    <p>O Codex Drive também pode operar em modo local, sem backend. O backend não possui banco permanente de solicitações, embora dados técnicos de infraestrutura possam existir nos logs do provedor de hospedagem conforme sua configuração e suas regras.</p>
 
     <h2>Limitações importantes</h2>
     <ul>
@@ -40,7 +51,7 @@
     <p>Se o aplicativo não reconhecer sua fala, confira as permissões de Microfone e Reconhecimento de Fala nos Ajustes, verifique a conexão com a internet e tente novamente em um ambiente menos ruidoso. Se uma ação externa não abrir, confirme que o aplicativo correspondente está instalado e disponível no aparelho.</p>
 
     <h2>Excluir dados locais</h2>
-    <p>Use os controles do aplicativo para excluir anotações ou histórico. A remoção do aplicativo também elimina os dados que ele mantém localmente no aparelho.</p>
+    <p>Use o comando “Apagar a transcrição desta viagem” para remover a memória da viagem atual. A interface também oferece um controle para apagar integralmente as transcrições e os resumos locais. Use os controles próprios das anotações para removê-las. A remoção do aplicativo também elimina os dados que ele mantém localmente no aparelho.</p>
 
     <h2>Contato</h2>
     <p>Para suporte, dúvidas de privacidade ou solicitação de exclusão de eventuais dados técnicos, escreva para <a href="mailto:paulobrochado91@gmail.com">paulobrochado91@gmail.com</a>. Informe a versão do aplicativo, o modelo do iPhone e uma descrição do problema, sem enviar senhas, códigos ou outras credenciais.</p>

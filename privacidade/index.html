@@ -17,11 +17,14 @@
     <h2>1. Microfone e reconhecimento de fala</h2>
     <p>O Codex Drive solicita acesso ao microfone e ao reconhecimento de fala para receber comandos falados. O áudio é captado somente durante o uso desse recurso. O reconhecimento de fala pode ser processado pelos serviços da Apple, de acordo com a disponibilidade e a configuração do aparelho. Nessa situação, o tratamento realizado pela Apple também está sujeito às políticas e aos termos da Apple.</p>
 
-    <h2>2. Anotações e histórico</h2>
-    <p>As anotações e o histórico recente de viagem são armazenados localmente no aparelho. Esses dados não são mantidos em uma conta do Codex Drive e não são usados para publicidade ou rastreamento.</p>
+    <h2>2. Anotações e Memória da Viagem</h2>
+    <p>As anotações são armazenadas localmente no aparelho. A função opcional “Memória da Viagem” armazena somente o texto transcrito durante uma viagem iniciada pelo usuário. Ela começa desativada em cada viagem e só registra transcrições depois que o usuário responde afirmativamente à pergunta de consentimento.</p>
+    <p>O usuário pode pausar, retomar ou apagar a transcrição da viagem por voz, além de excluir integralmente o histórico local pela interface. O histórico da memória é limitado. As transcrições são mantidas no armazenamento protegido do aplicativo e não são usadas para publicidade ou rastreamento.</p>
+    <p>O Codex Drive não armazena o áudio original, não cria arquivos de áudio e não conserva os buffers transitórios usados pelo reconhecimento de fala.</p>
 
     <h2>3. Backend e processamento por inteligência artificial</h2>
-    <p>Quando os recursos conectados estiverem ativos e um servidor de assistência estiver configurado, o texto reconhecido, um identificador temporário da sessão, o idioma e o estado da viagem podem ser enviados ao backend para interpretar o comando. O backend do Codex Drive não possui banco de dados permanente de solicitações.</p>
+    <p>Quando os recursos conectados estiverem ativos e um servidor de assistência estiver configurado, o comando corrente já transcrito, um identificador temporário da sessão, o idioma e o estado da viagem podem ser enviados ao backend para interpretação. O backend do Codex Drive não possui banco de dados permanente de solicitações.</p>
+    <p>A transcrição acumulada pela Memória da Viagem não é enviada automaticamente. Ao finalizar a viagem, o aplicativo pergunta se o usuário deseja organizar e resumir o conteúdo. Somente após uma resposta afirmativa a transcrição é enviada ao backend e, quando configurada, à OpenAI. Sem confirmação, ela permanece no aparelho. Se o serviço conectado estiver indisponível, o aplicativo gera uma organização local simples.</p>
     <p>Quando a integração de inteligência artificial estiver configurada, esse conteúdo poderá ser processado pela OpenAI para gerar a resposta. O processamento feito pela OpenAI está sujeito às configurações do serviço contratado e às políticas aplicáveis da OpenAI. Se o backend ou a integração não estiverem disponíveis, o aplicativo poderá usar recursos locais compatíveis.</p>
 
     <h2>4. Logs técnicos e retenção</h2>
@@ -34,7 +37,7 @@
     <p>Os dados não são vendidos. Quando os recursos conectados estiverem ativos, informações estritamente necessárias poderão ser processadas pela Apple, pela OpenAI e pelo provedor de hospedagem do backend, cada qual conforme sua função técnica e suas próprias condições aplicáveis.</p>
 
     <h2>7. Exclusão de dados e direitos do usuário</h2>
-    <p>Você pode excluir as anotações e o histórico local utilizando os controles disponíveis no aplicativo ou removendo o aplicativo do aparelho. Também pode revogar as permissões de microfone e reconhecimento de fala nos Ajustes do iOS.</p>
+    <p>Você pode excluir a transcrição da viagem atual por comando de voz e apagar integralmente as transcrições e resumos locais pelo controle de exclusão disponível no aplicativo. As anotações também podem ser removidas pelos controles do app. Remover o aplicativo elimina os dados locais do Codex Drive. Você também pode revogar as permissões de microfone e reconhecimento de fala nos Ajustes do iOS.</p>
     <p>Para tirar dúvidas, exercer direitos previstos na legislação aplicável ou solicitar a exclusão de eventuais dados técnicos associados ao serviço, envie um e-mail para <a href="mailto:paulobrochado91@gmail.com">paulobrochado91@gmail.com</a>. A solicitação será analisada considerando os dados efetivamente existentes, as limitações técnicas e as obrigações legais aplicáveis.</p>
 
     <h2>8. Segurança</h2>
